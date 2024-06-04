@@ -1,0 +1,172 @@
+.article-wrapper {
+  flex-wrap: wrap;
+  height: auto;
+  gap: 3px;
+}
+
+.blog__info-author {
+  margin: 0;
+}
+
+.blog__info {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #eee;
+}
+
+.blog__title {
+  margin-bottom: 35px;
+  font-size: 17px;
+}
+
+.article-trend {
+  width: calc((100% / 2) - 1.5px);
+  z-index: -1;
+  height: 250px;
+}
+
+.section-trend {
+  margin-bottom: 50px;
+  
+}
+
+.container {
+  width: auto;
+  padding: 0 35px;
+}
+
+.container-wrapper {
+  margin-bottom: 50px;
+}
+
+.header-wrapper {
+  padding: 0 35px;
+  width: 100%;
+}
+
+.header {
+  padding: 45px 0;
+  margin-bottom: 50px;
+  background-image: url('../images/img/banner-bg-tablet.jpg');
+}
+
+.header-menu {
+  display: none;
+}
+
+.blog {
+  flex-wrap: wrap;
+  max-height: 1000px;
+}
+
+.blog:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.main {
+  width: 55%;
+}
+
+.aside {
+  width: 40%;
+}
+
+.blog__link {
+  width: 100%;
+}
+
+.blog-img {
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.cards-wrapper {
+  width: 100%;
+  padding: 0 35px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.card {
+  width: calc(100% / 2 - 11px);
+}
+
+.footer-wrapper {
+  margin-top: 50px;
+}
+
+.social {
+  width: 100%;
+  padding: 0 35px;
+}
+
+.copyright {
+  padding-top: 50px;
+}
+
+.card__imgbox {
+  height: auto;
+}
+
+.card__img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.cards-title {
+  font-size: 18px;
+}
+
+.card__title {
+  font-size: 17px;
+}
+
+.form__search-button {
+  padding: 0;
+}
+
+.form__search-field {
+  max-width: 1000px;
+  width: calc(100% - 50px);
+}
+
+.menu__title {
+  max-width: 650px;
+  font-size: 40px;
+}
+
+.section-trend-title {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.article-info {
+  padding: 35px 30px;
+}
+
+.article-trend-title {
+  font-size: 17px;
+}
+
+.multiple-tags-item {
+  padding: 4px 14px 6px;
+}
+
+
+/* bottom__border */
+
+.section-trend-title::before {
+  top: 35px;
+}
+
+.cards-title::before {
+  top: 40px;
+}
+
+/* ---- hamburger ---- */
+
+.hamburger-menu {
+  display: block;
+}

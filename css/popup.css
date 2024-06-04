@@ -1,0 +1,152 @@
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.popup-container.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    position: absolute;
+    min-height: 500px;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 55px 35px;
+    background-color: white;
+    border: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.popup__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.popup__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.75em;
+    width: 66px;
+    left: calc(100% / 2 - 33px);
+    border-top: 3px solid #e1d9bd;
+}
+
+
+.popup__form-field {
+    padding: 0;
+    margin: 0;
+}
+
+.popup__flex {
+    display: flex;
+}
+#form-field__yes,
+#form-field__no {
+    margin: 0;
+}
+
+.radio-choise {
+    display: flex;
+    padding-right: 10px;
+    box-sizing: content-box;
+    align-items: center;
+    word-spacing: -.1em;
+    letter-spacing: 0;
+}
+
+.radio-choise__input {
+    margin: 0;
+    font-size: 16px;
+}
+
+input[type=radio] {
+    margin: 0;
+    border: 0px;
+    width: 30px;
+    height: 1.2em;
+    accent-color: rgb(181 122 86);
+}
+
+#feedback {
+    resize: none;
+    width: 100%;
+    height: 80px;
+    border: 0;
+    background-color: #f4f7f6;
+    padding: 15px;
+    font-family: inherit;
+}
+
+.popup-button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #b59f5b;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.radio-choise--cursor {
+    cursor: pointer;
+}
+
+.popup__atten > p{
+    margin-top: 27px;
+    margin-bottom: 7px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#attendace-select {
+    background-color: #f4f7f6;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup.show {
+    animation: popup-show 0.3s ease-in-out;
+}
+
+@keyframes popup-show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 767px) {
+    .popup {
+        min-width: 360px;
+        padding: 25px 12px;
+        background-color: white;
+    }
+    
+}
