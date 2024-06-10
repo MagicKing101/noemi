@@ -170,3 +170,12 @@
 .hamburger-menu {
   display: block;
 }
+
+.header-menu--mod {
+  display: block;
+}
+
+.button__card {
+  width: 100%;
+  padding: 0 35px;
+}

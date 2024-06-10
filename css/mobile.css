@@ -133,3 +133,17 @@
 .cards-title::before {
   top: 30px;
 }
+
+.header-menu--mod {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.button__title {
+  width: auto;
+}
+
+.form__sub {
+  width: auto;
+}

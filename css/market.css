@@ -305,7 +305,51 @@ a {
   text-decoration-color: #b59f5b;
 }
 
+/* button */
 
+.form__sub-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__sub-button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: #b59f5b;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.form__sub {
+  width: 340px;
+}
+
+.button__card {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 60px auto 0;
+}
+
+.form-field {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 20px;
+  border: none;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  color: #888888;
+}
+
+.button__title {
+  font-size: 16px;
+  margin-bottom: 30px;
+  width: 340px;
+}
 
 /* ---- hamburger ---- */
 

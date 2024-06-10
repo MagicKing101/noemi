@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/market.css">
+  <link rel="stylesheet" href="css/tablet.css" media="(max-width: 1199px)">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 640px)">
   <link rel="shortcut icon" href="https://pngimg.com/uploads/letter_n/letter_n_PNG1.png">
   <title>Noemi</title>
 </head>
@@ -18,25 +20,16 @@
         <a class="menu__logo-link" href="index.html">
           <img class="menu__logo" src="images/svg/noemi-logo.svg" alt="Noemi">
         </a>
-        <nav class="header-menu">
+        <nav class="header-menu header-menu--mod">
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="index.html">Главная</a>
             </li>
           </ul>
         </nav>
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-          <ul class="menu__box">
-            <li><a class="menu__object" href="#">Главная</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-    <h1 class="menu__title">Наши товары можно заказать по номеру телефона <span class="number-phone">+79812345699</span></h1>
+    <h1 class="menu__title">Наши товары</h1>
   </header>
 
   <section class="cards-wrapper" data-aos="fade-up">
@@ -115,6 +108,15 @@
       </article>
     </div>
   </section>
+  <div class="button__card">
+    <h2 class="button__title">Для заказа оставьте свои данные, мы с Вами свяжемся в ближайшее время</h2>
+    <form class="form__sub">
+      <input class="form-field form__sub-field" type="text" placeholder="Ваше имя" required>
+      <input class="form-field form__sub-field" type="tel" placeholder="Ваш номер телефона +7" required>
+      <input class="form-field form__sub-field" type="email" placeholder="Ваш email-адрес" required>
+      <button class="form__sub-button button--hover" type="submit">Отправить</button>
+    </form>
+  </div>
 
     <!-- FOOTER -->
 
